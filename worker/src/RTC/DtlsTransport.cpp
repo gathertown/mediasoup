@@ -999,6 +999,7 @@ namespace RTC
 		if (timeoutMs == 0)
 		{
             MS_DEBUG_DEV("timeout is 0, calling OnTimer() callback directly");
+
 			OnTimer(this->timer);
 
 			return true;
