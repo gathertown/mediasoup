@@ -1435,7 +1435,7 @@ namespace RTC
 			// Set the DTLS timer again.
 			SetTimeout();
 		}
-        else if (ret == -1)
+		else if (ret == -1)
 		{
 			MS_WARN_TAG(dtls, "DTLSv1_handle_timeout() failed");
 
