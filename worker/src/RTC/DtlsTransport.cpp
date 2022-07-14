@@ -997,7 +997,7 @@ namespace RTC
 
 		if (timeoutMs == 0)
 		{
-            MS_DEBUG_DEV("timeout is 0, calling OnTimer() callback directly");
+			MS_DEBUG_DEV("timeout is 0, calling OnTimer() callback directly");
 
 			OnTimer(this->timer);
 
@@ -1427,14 +1427,14 @@ namespace RTC
 		// had expired without progress or an error occurs, it returns -1.
 		auto ret = DTLSv1_handle_timeout(this->ssl);
 
-        if (ret == 1)
-        {
-            // If required, send DTLS data.
-            SendPendingOutgoingDtlsData();
+		if (ret == 1)
+		{
+			// If required, send DTLS data.
+			SendPendingOutgoingDtlsData();
 
-            // Set the DTLS timer again.
-            SetTimeout();
-        }
+			// Set the DTLS timer again.
+			SetTimeout();
+		}
         else if (ret == -1)
 		{
 			MS_WARN_TAG(dtls, "DTLSv1_handle_timeout() failed");
