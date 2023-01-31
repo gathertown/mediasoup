@@ -408,6 +408,12 @@ namespace RTC
 				return false;
 			}
 
+			// Do not send tlIndex higher than current one.
+			if (this->payloadDescriptor->tlIndex > context->GetCurrentTemporalLayer())
+			{
+				return false;
+			}
+
 			// clang-format off
 			if (
 				this->payloadDescriptor->hasPictureId &&
