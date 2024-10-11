@@ -1,5 +1,5 @@
 {
-	"name": "mediasoup",
+	"name": "@gathertown/mediasoup",
 	"version": "0.0.2-gather",
 	"description": "Cutting Edge WebRTC Video Conferencing",
 	"contributors": [
