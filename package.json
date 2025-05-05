@@ -1,6 +1,6 @@
 {
 	"name": "@gathertown/mediasoup",
-	"version": "0.0.3-gather",
+	"version": "0.0.4-gather",
 	"description": "Cutting Edge WebRTC Video Conferencing",
 	"contributors": [
 		"Iñaki Baz Castillo <ibc@aliax.net> (https://inakibaz.me)",
